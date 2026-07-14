@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OLIVA — Mediterranean Kitchen, Baku</title>
+<meta name="description" content="OLIVA is a modern Mediterranean restaurant in Baku — wood-fired dishes, local ingredients, honest cooking." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">OLIVA</span>
+      <span class="logo-sub">Mediterranean Kitchen</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Location</a>
+    </nav>
+
+    <div class="nav-right">
+      <a href="tel:+994124041122" class="nav-phone">+994 12 404 11 22</a>
+      <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu panel -->
+<div class="mobile-panel" id="mobilePanel">
+  <a href="#menu">Menu</a>
+  <a href="#story">Our Story</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Location</a>
+  <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80" alt="Signature pasta dish at OLIVA" />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content reveal">
+    <p class="eyebrow">MEDITERRANEAN KITCHEN · BAKU</p>
+    <h1 class="hero-title">Simple food.<br><em>Honest</em> ingredients.</h1>
+    <p class="hero-sub">Wood-fired dishes built around what's in season — served in the old town of Baku since 2016.</p>
+    <div class="hero-actions">
+      <a href="#reserve" class="btn btn-primary">Reserve a Table</a>
+      <a href="#menu" class="btn btn-outline">View Menu</a>
+    </div>
+  </div>
+
+  <a href="#ticker" class="scroll-cue" aria-label="Scroll down">
+    <span></span> Scroll
+  </a>
+</section>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker" id="ticker">
+  <div class="ticker-track">
+    <span>WOOD-FIRED</span><span>·</span><span>LOCAL FARMS</span><span>·</span><span>FRESH DAILY</span><span>·</span>
+    <span>OPEN EVERY DAY</span><span>·</span><span>SEASONAL MENU</span><span>·</span>
+    <span>WOOD-FIRED</span><span>·</span><span>LOCAL FARMS</span><span>·</span><span>FRESH DAILY</span><span>·</span>
+    <span>OPEN EVERY DAY</span><span>·</span><span>SEASONAL MENU</span><span>·</span>
+  </div>
+</div>
+
+<!-- ===================== STORY ===================== -->
+<section class="story" id="story">
+  <div class="story-media reveal">
+    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1200&q=80" alt="Chef preparing a dish in the OLIVA kitchen" />
+    <div class="story-media-badge glass">
+      <strong>8</strong>
+      <span>years in the old town</span>
+    </div>
+  </div>
+
+  <div class="story-content reveal">
+    <p class="eyebrow">OUR STORY</p>
+    <h2 class="section-title">A kitchen built<br>around the market, not the menu.</h2>
+    <p class="story-text">OLIVA started as a single wood oven and a market basket. Every morning our chefs walk the Taza Bazar before deciding what the day's menu will be — which is why our dishes change with the seasons, not with trends.</p>
+    <p class="story-text">No shortcuts, no freezers full of pre-made sauces. Just good ingredients, treated simply, served the way we'd want to eat at home.</p>
+    <p class="story-signature">— Rauf Aliyev, Head Chef &amp; Founder</p>
+  </div>
+</section>
+
+<!-- ===================== MENU ===================== -->
+<section class="menu" id="menu">
+  <div class="section-head reveal">
+    <p class="eyebrow">THE MENU</p>
+    <h2 class="section-title">What we're cooking this season</h2>
+  </div>
+
+  <div class="menu-tabs reveal" role="tablist">
+    <button class="tab active" data-tab="starters">Starters</button>
+    <button class="tab" data-tab="mains">Mains</button>
+    <button class="tab" data-tab="desserts">Desserts</button>
+    <button class="tab" data-tab="drinks">Drinks</button>
+  </div>
+
+  <div class="menu-panels reveal">
+
+    <ul class="menu-list active" data-panel="starters">
+      <li><div class="item"><span class="item-name">Charred Octopus</span><span class="dots"></span><span class="item-price">18 AZN</span></div><p class="item-desc">Smoked paprika oil, crushed potato, olive crumble</p></li>
+      <li><div class="item"><span class="item-name">Burrata &amp; Heirloom Tomato</span><span class="dots"></span><span class="item-price">14 AZN</span></div><p class="item-desc">Basil oil, aged balsamic, sourdough crisp</p></li>
+      <li><div class="item"><span class="item-name">Market Vegetable Meze</span><span class="dots"></span><span class="item-price">12 AZN</span></div><p class="item-desc">Five daily dips, warm flatbread</p></li>
+      <li><div class="item"><span class="item-name">Wood-Fired Flatbread</span><span class="dots"></span><span class="item-price">10 AZN</span></div><p class="item-desc">Whipped feta, chili honey, thyme</p></li>
+    </ul>
+
+    <ul class="menu-list" data-panel="mains">
+      <li><div class="item"><span class="item-name">Slow-Roasted Lamb Shoulder</span><span class="dots"></span><span class="item-price">36 AZN</span></div><p class="item-desc">Charred leeks, jus, sumac yoghurt</p></li>
+      <li><div class="item"><span class="item-name">Whole Grilled Seabream</span><span class="dots"></span><span class="item-price">32 AZN</span></div><p class="item-desc">Lemon, capers, wild herb oil</p></li>
+      <li><div class="item"><span class="item-name">Handmade Saffron Pasta</span><span class="dots"></span><span class="item-price">24 AZN</span></div><p class="item-desc">Brown butter, aged parmesan, black pepper</p></li>
+      <li><div class="item"><span class="item-name">Wood-Fired Chicken</span><span class="dots"></span><span class="item-price">26 AZN</span></div><p class="item-desc">Garlic confit, roast vegetables, pan jus</p></li>
+    </ul>
+
+    <ul class="menu-list" data-panel="desserts">
+      <li><div class="item"><span class="item-name">Pistachio Baklava</span><span class="dots"></span><span class="item-price">9 AZN</span></div><p class="item-desc">Orange blossom syrup, clotted cream</p></li>
+      <li><div class="item"><span class="item-name">Dark Chocolate Tart</span><span class="dots"></span><span class="item-price">11 AZN</span></div><p class="item-desc">Sea salt, espresso crumb</p></li>
+      <li><div class="item"><span class="item-name">Fig &amp; Honey Tart</span><span class="dots"></span><span class="item-price">10 AZN</span></div><p class="item-desc">Mascarpone, toasted walnut</p></li>
+    </ul>
+
+    <ul class="menu-list" data-panel="drinks">
+      <li><div class="item"><span class="item-name">House Red Blend</span><span class="dots"></span><span class="item-price">9 AZN / glass</span></div><p class="item-desc">Local vineyard, Ismayilli region</p></li>
+      <li><div class="item"><span class="item-name">Pomegranate Fizz</span><span class="dots"></span><span class="item-price">7 AZN</span></div><p class="item-desc">Fresh pomegranate, soda, mint</p></li>
+      <li><div class="item"><span class="item-name">Turkish Coffee</span><span class="dots"></span><span class="item-price">5 AZN</span></div><p class="item-desc">Slow brewed, served with lokum</p></li>
+    </ul>
+
+  </div>
+
+  <div class="menu-note reveal">Full wine list and seasonal specials available in-house · Prices include VAT</div>
+</section>
+
+<!-- ===================== VALUES ===================== -->
+<section class="values">
+  <div class="value-card glass reveal">
+    <span class="value-icon">🌿</span>
+    <h3>Locally Sourced</h3>
+    <p>Produce from Taza Bazar and partner farms within 100km of Baku.</p>
+  </div>
+  <div class="value-card glass reveal">
+    <span class="value-icon">🔥</span>
+    <h3>Wood-Fired</h3>
+    <p>Our oven runs on oak from sunrise to close — nothing else.</p>
+  </div>
+  <div class="value-card glass reveal">
+    <span class="value-icon">🗓️</span>
+    <h3>Seasonal Menu</h3>
+    <p>Rewritten every few weeks around what's actually in season.</p>
+  </div>
+  <div class="value-card glass reveal">
+    <span class="value-icon">🏠</span>
+    <h3>Family Owned</h3>
+    <p>Run by the Aliyev family since day one — no outside investors.</p>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="gallery" id="gallery">
+  <div class="section-head reveal">
+    <p class="eyebrow">GALLERY</p>
+    <h2 class="section-title">A look inside OLIVA</h2>
+  </div>
+
+  <div class="gallery-grid reveal">
+    <div class="g-item g-tall" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Restaurant dining room">
+    </div>
+    <div class="g-item" data-full="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Grilled steak dish">
+    </div>
+    <div class="g-item" data-full="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=800&q=80" alt="Wood fired pizza">
+    </div>
+    <div class="g-item g-tall" data-full="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=800&q=80" alt="Fresh salad plate">
+    </div>
+    <div class="g-item" data-full="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Restaurant interior seating">
+    </div>
+    <div class="g-item" data-full="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1400&q=80">
+      <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Food flatlay spread">
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <img id="lightboxImg" src="" alt="Gallery preview">
+</div>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="reviews" id="reviews">
+  <div class="section-head reveal">
+    <p class="eyebrow">REVIEWS</p>
+    <h2 class="section-title">What guests are saying</h2>
+  </div>
+
+  <div class="reviews-slider reveal">
+    <div class="review-track" id="reviewTrack">
+      <div class="review-card glass">
+        <div class="stars">★★★★★</div>
+        <p>"The lamb shoulder alone is worth the trip. Best Mediterranean food we've had in Baku, hands down."</p>
+        <span class="reviewer">— Aygun M.</span>
+      </div>
+      <div class="review-card glass">
+        <div class="stars">★★★★★</div>
+        <p>"Cozy, warm, and the menu actually changes — you can taste that everything is fresh."</p>
+        <span class="reviewer">— James R.</span>
+      </div>
+      <div class="review-card glass">
+        <div class="stars">★★★★★</div>
+        <p>"Our go-to spot for anniversaries. The staff remembered us from last year. That's rare."</p>
+        <span class="reviewer">— Leyla &amp; Kamran</span>
+      </div>
+      <div class="review-card glass">
+        <div class="stars">★★★★★</div>
+        <p>"Order the burrata. Then thank me later. Genuinely one of the best plates in the city."</p>
+        <span class="reviewer">— Nigar S.</span>
+      </div>
+    </div>
+    <div class="review-dots" id="reviewDots"></div>
+  </div>
+</section>
+
+<!-- ===================== RESERVE ===================== -->
+<section class="reserve" id="reserve">
+  <div class="reserve-media">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80" alt="Set table at OLIVA">
+  </div>
+
+  <div class="reserve-form-wrap glass reveal">
+    <p class="eyebrow">RESERVATIONS</p>
+    <h2 class="section-title">Book your table</h2>
+    <p class="reserve-sub">We hold reservations for 15 minutes past the booked time.</p>
+
+    <form id="reserveForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="rName">Full name</label>
+          <input type="text" id="rName" required placeholder="Your name">
+          <span class="error-msg">Please enter your name</span>
+        </div>
+        <div class="field">
+          <label for="rPhone">Phone</label>
+          <input type="tel" id="rPhone" required placeholder="+994 XX XXX XX XX">
+          <span class="error-msg">Please enter a valid phone number</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="rDate">Date</label>
+          <input type="date" id="rDate" required>
+          <span class="error-msg">Please choose a date</span>
+        </div>
+        <div class="field">
+          <label for="rTime">Time</label>
+          <select id="rTime" required>
+            <option value="">Select time</option>
+            <option>12:00</option><option>13:00</option><option>18:00</option>
+            <option>19:00</option><option>20:00</option><option>21:00</option>
+          </select>
+          <span class="error-msg">Please choose a time</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="rGuests">Guests</label>
+        <select id="rGuests" required>
+          <option value="">Number of guests</option>
+          <option>1 guest</option><option>2 guests</option><option>3 guests</option>
+          <option>4 guests</option><option>5 guests</option><option>6+ guests</option>
+        </select>
+        <span class="error-msg">Please select number of guests</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-full">
+        <span class="btn-label">Confirm Reservation</span>
+      </button>
+    </form>
+
+    <div class="reserve-success" id="reserveSuccess">
+      <span class="success-icon">✓</span>
+      <h3>Reservation requested</h3>
+      <p>We'll confirm by phone within the hour. Thank you!</p>
+      <button class="btn btn-outline" id="reserveAgain">Book another</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer" id="contact">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="logo-mark light">OLIVA</span>
+      <p>Mediterranean kitchen in the heart of the Old Town — wood-fired, seasonal, honest.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Visit</h4>
+      <p>28 Kichik Qala St.<br>Icherisheher, Baku, AZ1000</p>
+      <p>+994 12 404 11 22</p>
+      <p>hello@oliva.baku</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <p>Mon – Thu: 12:00 – 23:00</p>
+      <p>Fri – Sun: 12:00 – 00:30</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Stay in the loop</h4>
+      <p>New menus, events &amp; seasonal tastings.</p>
+      <form class="newsletter" id="newsletterForm">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" aria-label="Subscribe">→</button>
+      </form>
+      <span class="newsletter-msg" id="newsletterMsg"></span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 OLIVA Restaurant. All rights reserved.</span>
+    <span>Site by <strong>website.az</strong></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
